@@ -8,7 +8,7 @@ body {
     "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 15px;
   line-height: 1.8;
-  letter-spacing: .8px;
+  letter-spacing: .03em;
   word-break: break-all;
   color: #333;
 }
@@ -59,7 +59,7 @@ ul, li {
 ---------------------------------*/
 .heading-primary {
   font-family: "Open sans", sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: normal;
   line-height: 1;
   margin-bottom: 15px;
@@ -105,10 +105,18 @@ ul, li {
 ヘッダー
 ---------------------------------*/
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  height: 86vh;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 480px;
+  background-size: auto 100%;
+  background: url(../img/header/header_img.jpg) center center;
 }
 
 .logo {
@@ -120,7 +128,7 @@ ul, li {
 
 .logo-title {
   font-family: "Open sans", sans-serif;
-  font-size: 64px;
+  font-size: 54px;
   line-height: 1;
   letter-spacing: .2em;
 }
@@ -199,13 +207,20 @@ ul, li {
  Works
 ---------------------------------*/
 .works-list {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-bottom: -40px;
 }
 
 .works-item {
-  flex: 0 0 32.31552%;
+  width: 32%;
   margin-right: 1.52671%;
   margin-bottom: 40px;
 }
@@ -219,7 +234,7 @@ ul, li {
 }
 
 .works-title {
-  font-size: 12px;
+  font-size: 25px;
   font-weight: bold;
   margin-top: 8px;
 }
@@ -280,26 +295,16 @@ ul, li {
   width: 80%;
   margin: 0 auto;
   padding: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .card {
   flex-basis: 46%;
   margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -314,9 +319,6 @@ ul, li {
   border-radius: .25rem;
 }
 
-.card:first-child {
-  flex-basis: 100%;
-}
 
 .skill-icon {
   flex-basis: 45px;
@@ -334,11 +336,9 @@ ul, li {
   font-weight: bold;
 }
 
-.skill-desc-title i{
-  margin-right: 12px;
-}
 
 table {
+  margin-top: 30px;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
@@ -471,7 +471,7 @@ table td.icon.java{
 ----------------------------------------------------*/
 @media screen and (max-width: 767px) {
   body {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.7;
   }
   .pc-only {
@@ -496,7 +496,7 @@ table td.icon.java{
     margin-bottom: 20px;
   }
   .heading-primary {
-    font-size: 22px;
+    font-size: 15px;
   }
 
   /* レイアウト */
@@ -514,20 +514,14 @@ table td.icon.java{
   .header {
     height: 70vh;
   }
-  .logo-title {
-    font-size: 28px;
-    letter-spacing: .16em;
-  }
-  .logo-subtitle {
-    font-size: 14px;
-  }
 
   /* グローバルナビ */
   .gnav {
     padding: 15px 0;
   }
+
   .gnav-item {
-    font-size: 13px;
+    font-size: 15px;
     padding: 2px 15px;
   }
   .gnav-link {

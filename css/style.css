@@ -234,17 +234,17 @@ ul, li {
 }
 
 .works-title {
-  font-size: 25px;
+  font-size: 15px;
   font-weight: bold;
   margin-top: 8px;
 }
 
 .works-text {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .works-url {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .works-image.fadein {
@@ -549,7 +549,7 @@ table td.icon.java{
     text-align: left;
   }
   .works-title {
-    font-size: 10px;
+    font-size: 15px;
   }
   .works-list {
     justify-content: space-between;

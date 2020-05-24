@@ -59,7 +59,7 @@ ul, li {
 ---------------------------------*/
 .heading-primary {
   font-family: "Open sans", sans-serif;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: normal;
   line-height: 1;
   margin-bottom: 15px;
@@ -128,14 +128,14 @@ ul, li {
 
 .logo-title {
   font-family: "Open sans", sans-serif;
-  font-size: 54px;
+  font-size: 45px;
   line-height: 1;
   letter-spacing: .2em;
 }
 
 .logo-subtitle {
-  font-size: 20px;
-  margin-top: 5px;
+  font-size: 25px;
+  margin-top: 20px;
   text-align: center;
   letter-spacing: .2em;
 }
@@ -334,6 +334,7 @@ ul, li {
   font-size:26px;
   padding: 24px;
   font-weight: bold;
+
 }
 
 
@@ -492,11 +493,20 @@ table td.icon.java{
   }
 
   /* 文字 */
+  .logo-title {
+    font-size: 35px;
+  }
+
+  .logo-subtitle {
+    font-size: 20px;
+  }
+
   .section-heading {
     margin-bottom: 20px;
   }
+
   .heading-primary {
-    font-size: 15px;
+    font-size: 35px;
   }
 
   /* レイアウト */

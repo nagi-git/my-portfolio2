@@ -88,11 +88,11 @@ ul, li {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 60px 0;
 }
 
 .section:nth-of-type(odd) {
-  background-color: #f7f7f7;
+  background-color: #e1deff;
 }
 
 .inner {
@@ -558,16 +558,6 @@ table td.icon.java{
     flex: 0 0 48%;
     margin-right: 0;
     margin-bottom: 30px;
-  }
-
-  /* Feature */
-  .feature-item {
-    display: block;
-  }
-  .feature-image-wrapper {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
   }
 
   /* About */

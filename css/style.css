@@ -207,7 +207,7 @@ ul, li {
  Works
 ---------------------------------*/
 .works-list {
-  padding: 20px 0;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,43 +218,95 @@ ul, li {
   justify-content: space-between;
   margin-bottom: -40px;
 }
-
+.works-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  transition: all .5s;
+}
 .works-item {
-  width: 32%;
+  width: 30%;
   margin-right: 1.52671%;
   margin-bottom: 40px;
+  box-shadow: 0 0 4px 1px rgb(113 135 164 / 12%);
+  background-color: #f2f1ff;
 }
 
-.works-item:nth-of-type(3n) {
-  margin-right: 0;
+.works-item__header_01 {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.works-body {
-  text-align: center;
-}
-
-.works-title {
-  font-size: 15px;
+.works-item__title_01 {
+  padding: 1rem 1.5rem 0;
+  font-size: 1.4rem;
+  order: 1;
+  margin-bottom: 0.6rem;
   font-weight: bold;
-  margin-top: 8px;
+  text-decoration: none;
 }
 
-.works-text {
-  font-size: 12px;
+.works-item__image_01 {
+  display: block;
+  margin-bottom: 8px;
+  height: 230px;
+  left: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .16);
 }
 
-.works-url {
-  font-size: 12px;
+.works-item__body_01 {
+  padding: 0 1.5rem;
+  min-height: 140px;
+  min-width: 200px;
 }
 
-.works-image.fadein {
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  opacity: 0;
+.works-item__text_01 {
+  font-size: .8rem;
+  text-align:center;
+  text-decoration: none;
+	padding-bottom: 0;
 }
 
-.works-image.fadein.lazyloaded {
-  opacity: 1;
+.works-item__text2_01 {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+
+.works-item__text2_02 {
+  font-size: .6rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.works-item__text_01 + .works-item__text_01 {
+  margin-top: .5rem;
+}
+
+.works-item__footer_01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border-top: 1px solid #ddd;
+}
+
+.button_01 a {
+  display: block;
+  justify-content: space-between;
+  text-align: center;
+  margin: 5px 0;
+  padding: 6px 2em;
+  width: 150px;
+  left: 50%;
+  color: #333;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: #b3aeff;
+  border-radius: 50vh;
+}
+
+.button_01 a:hover {
+	opacity: 0.6;
+  text-decoration: none;
 }
 
 /*--------------------------------
@@ -292,7 +344,7 @@ ul, li {
 }
 
 .card-wrapper {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   padding: 20px 0;
   display: flex;
@@ -334,7 +386,6 @@ ul, li {
   font-size:26px;
   padding: 24px;
   font-weight: bold;
-
 }
 
 
@@ -356,7 +407,7 @@ table tr:hover {
 table th, table td {
   text-align: center;
   width: 25%;
-  padding: 15px 0;
+  padding: 15px;
 }
 
 table td.icon.java{

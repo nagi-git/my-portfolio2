@@ -51,6 +51,8 @@
   .feed-item {
     display: flex;
     padding: 24px;
+    padding-left: 45px;
+    padding-right: 35px;
     border-bottom: 1px solid #f3f4f6;
   }
   

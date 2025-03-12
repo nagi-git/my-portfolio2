@@ -77,22 +77,6 @@
     transition: .3s;
     color: #333;
   }
-  
-  /* .search-section {
-    padding: 0 16px;
-    margin-bottom: 16px;
-  }
-  
-  .search-input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    background-color: #f3f4f6;
-    font-size: 16px;
-    outline: none;
-    font-family: inherit;
-  } */
 
   .margin-section {
     margin-top: 120px;
@@ -169,8 +153,27 @@
     border-radius: 50%;
     background-color: #e5e7eb;
   }
+
+  /* --------move.html-------------------- */
+  .title-text {
+    margin-left: 50px;
+    padding-top: 30px;
+    font-size: 35px;
+    display: flex;
+  }
+
+  .title-svg {
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+  }
+
+  .rosenzu-image {
+    max-width: 100%;
+    height: auto;
+  }
   
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     .navigation {
       padding: 12px;
     }
@@ -182,5 +185,5 @@
     .feed-item {
       padding: 25px;
     }
-  }
+  } */
   
